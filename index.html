@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nikhil Puri Goswami — Portfolio</title>
+  <meta name="description" content="Personal portfolio showcasing projects, skills and contact information." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+  <a class="logo" href="#">Nikhil Puri Goswami</a>
+  <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+  <a href="https://github.com/nikhil20goswami" target="_blank" rel="noopener">GitHub</a>
+  <a href="https://www.hackerrank.com/profile/nikhilpurigoswa1" target="_blank" rel="noopener">HackerRank</a>
+  <a href="https://leetcode.com/u/nikhil20goswami/" target="_blank" rel="noopener">LeetCode</a>
+  <a href="https://www.linkedin.com/in/nikhil-puri-goswami-165619331/" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://www.instagram.com/nikhil_20_goswami/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <div class="theme-controls">
+        <label for="themeSelect" class="visually-hidden">Theme</label>
+        <select id="themeSelect" class="theme-select" aria-label="Choose theme">
+          <option value="dark">Dark</option>
+          <option value="blue">Blue</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I’m <span id="displayName">Nikhil Puri Goswami</span>.</h1>
+          <p class="lead">I build useful and beautiful things on the web. I specialize in front-end development, UI/UX, and responsive design.</p>
+          <p>
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn outline" href="#contact">Get in touch</a>
+          </p>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img class="profile-photo" src="../Images/Nikhil.jpeg" alt="Nikhil Puri Goswami" width="220" height="220" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container about" id="about">
+      <h2>About</h2>
+      <p id="bio">“My name is Nikhil Puri Goswami, and I am currently pursuing engineering in Data Science. Along with my skills in HTML, CSS, C, C++, and Python, I am also learning web development to strengthen my technical expertise. I am passionate about technology, problem-solving, and continuous learning, and I aim to apply my knowledge to create real-world projects and impactful solutions.”</p>
+    </section>
+
+    <section class="container projects" id="projects">
+      <h2>Selected projects</h2>
+      <div class="grid" id="projectsGrid">
+        <article class="card">
+          <div class="card-body">
+            <h3>Project</h3>
+            <p>My first project from GitHub. See the source repository for details and installation instructions.</p>
+            <p class="card-links"><a href="#">Live</a> · <a href="https://github.com/nikhil20goswami/Project" target="_blank" rel="noopener">Source</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <h3>Spotify Project</h3>
+            <p>A Spotify-inspired web application. See the source repository for full details, setup and screenshots.</p>
+            <p class="card-links"><a href="#">Live</a> · <a href="https://github.com/nikhil20goswami/Spotify-" target="_blank" rel="noopener">Source</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <h3>Game of Cards</h3>
+            <p>A card game implemented as a web project — rules, gameplay and scoring are in the repo.</p>
+            <p class="card-links"><a href="#">Live</a> · <a href="https://github.com/nikhil20goswami/Game-of-Cards" target="_blank" rel="noopener">Source</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container skills" id="skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <section class="container contact" id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to work together, send me a message or reach out directly:</p>
+      <div class="contact-links">
+        <p>Email: <a href="mailto:nikhilpurigoswami20@gmail.com">nikhilpurigoswami20@gmail.com</a></p>
+        <p>Phone: <a href="tel:7879197887">7879197887</a></p>
+      </div>
+      <form id="contactForm">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Send</button>
+          <button type="reset" class="btn outline">Reset</button>
+        </div>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+  <p>© <span id="year">2025</span> Nikhil Puri Goswami — Built with care.</p>
+  <p>Contact: <a href="mailto:nikhilpurigoswami20@gmail.com">nikhilpurigoswami20@gmail.com</a> · <a href="tel:7879197887">7879197887</a> · <a href="https://github.com/nikhil20goswami" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.hackerrank.com/profile/nikhilpurigoswa1" target="_blank" rel="noopener">HackerRank</a> · <a href="https://leetcode.com/u/nikhil20goswami/" target="_blank" rel="noopener">LeetCode</a> · <a href="https://www.linkedin.com/in/nikhil-puri-goswami-165619331/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.instagram.com/nikhil_20_goswami/" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+</body>
+</html>
